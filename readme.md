@@ -39,6 +39,7 @@ Add `<NetStandardRecords/>` to [FodyWeavers.xml](https://github.com/Fody/Home/bl
 C# 9 records are by default immutable. However to allow them to work with existing serialization frameworks the property setters need to be public.
 
 https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types
+
 https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#init-only-setters
 
 So that the compiler knows that these properties are immutable they are marked with a special marker in IL called `System.Runtime.CompilerServices.IsExternalInit`. However that type is only availble in .NET 5 and later. To use C# 9 records in .NET Standard and .NET Core the type has to be supplied by this package instead.
