@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Version>1.0.0</Version>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>latest</LangVersion>
+    <DebugType>full</DebugType>
+    <Authors>Cameron MacFarland</Authors>
+    <Description>Allows .NET standard builds to use and consume assembiles compiled with C# 9 records.</Description>
+    <PackageTags>Records, ILWeaving, Cecil</PackageTags>
+    <PackageOutputPath>$(SolutionDir)nugets</PackageOutputPath>
+    <PackageIconUrl>https://raw.githubusercontent.com/distantcam/NetStandardRecords/master/package_icon.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/distantcam/NetStandardRecords</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>

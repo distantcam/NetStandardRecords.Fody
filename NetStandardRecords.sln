@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29201.188
+MinimumVisualStudioVersion = 16.0.29201.188
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardRecords", "NetStandardRecords\NetStandardRecords.csproj", "{145DA24E-98BA-4527-A506-D152F2FF88D4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{83149E62-D74F-4286-8FA1-596FA44AF49A} = {83149E62-D74F-4286-8FA1-596FA44AF49A}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardRecords.Fody", "NetStandardRecords.Fody\NetStandardRecords.Fody.csproj", "{83149E62-D74F-4286-8FA1-596FA44AF49A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{145DA24E-98BA-4527-A506-D152F2FF88D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145DA24E-98BA-4527-A506-D152F2FF88D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145DA24E-98BA-4527-A506-D152F2FF88D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145DA24E-98BA-4527-A506-D152F2FF88D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83149E62-D74F-4286-8FA1-596FA44AF49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83149E62-D74F-4286-8FA1-596FA44AF49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83149E62-D74F-4286-8FA1-596FA44AF49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83149E62-D74F-4286-8FA1-596FA44AF49A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9911FEAD-C577-4D67-A1C4-0F1D59E9B23A}
+	EndGlobalSection
+EndGlobal
