@@ -34,6 +34,20 @@ Add `<NetStandardRecords/>` to [FodyWeavers.xml](https://github.com/Fody/Home/bl
 </Weavers>
 ```
 
+### Use C# 9 as the language version
+
+In your project, set C# 9 as the language version.
+
+```xml
+<Project>
+  ...
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion> <!-- Or 'latest' -->
+  </PropertyGroup>
+  ...
+</Project>
+```
+
 ## Why is this needed?
 
 C# 9 records are by default immutable. However to allow them to work with existing serialization frameworks the property setters need to be public.
