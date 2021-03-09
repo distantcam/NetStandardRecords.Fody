@@ -5,6 +5,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <LangVersion>latest</LangVersion>
     <DebugType>full</DebugType>
+    <DevelopmentDependency>true</DevelopmentDependency>
     <Authors>Cameron MacFarland</Authors>
     <Description>Allows .NET standard builds to use and consume assembiles compiled with C# 9 records.</Description>
     <PackageTags>Records, ILWeaving, Cecil</PackageTags>
