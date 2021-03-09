@@ -1,5 +1,8 @@
-name: build
-on: [push]
+name: ci
+on:
+  push:
+    tags:
+      - v*
 
 jobs:
   build:
@@ -18,4 +21,8 @@ jobs:
         id: gitversion
         uses: gittools/actions/gitversion/execute@v0.9.7
       - name: Build
-        run: dotnet build -p:Version=${{ steps.gitversion.outputs.nuGetVersionV2 }}
+        run: dotnet build -c Release -p:Version=${{ steps.gitversion.outputs.nuGetVersionV2 }}
+      - name: Test
+        run: dotnet test -c Release --no-build --no-restore
+      - name: PushNuget
+        run: dotnet nuget push nugets/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
