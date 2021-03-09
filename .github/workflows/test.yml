@@ -21,3 +21,8 @@ jobs:
         run: dotnet build -c Release -p:Version=${{ steps.gitversion.outputs.nuGetVersionV2 }}
       - name: Test
         run: dotnet test -c Release --no-build --no-restore
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: nupkg
+          path: nugets\*.nupkg
