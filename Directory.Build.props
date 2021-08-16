@@ -13,6 +13,7 @@
     <PackageIcon>package_icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/distantcam/NetStandardRecords.Fody</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <DevelopmentDependency>true</DevelopmentDependency>
   </PropertyGroup>
 
   <ItemGroup>

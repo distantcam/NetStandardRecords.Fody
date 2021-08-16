@@ -24,4 +24,16 @@ public class WeaverTests
 
         Assert.Equal("Example { Number = 42, String = Foobar }", instance.ToString());
     }
+
+    [Fact]
+    public void ValidateNestedNestedRecordCanBeSetAfterConstruction()
+    {
+        var type = testResult.Assembly.GetType("NestedExample+NestedRecord+NestedNestedRecord");
+        var instance = (dynamic)Activator.CreateInstance(type, 1, "foo");
+        instance.Number = 42;
+        instance.String = "Foobar";
+
+        Assert.Equal("NestedNestedRecord { Number = 42, String = Foobar }", instance.ToString());
+    }
+
 }
